@@ -1,0 +1,19 @@
+﻿@model Model.ViewModels.LoginViewModel
+@{
+    ViewBag.Title = "Login";
+    Layout = null;
+}
+
+<h2>Login</h2>
+
+@using (Html.BeginForm("Login", "Account", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.TextBoxFor(Model => Model.UserName)
+    @Html.TextBoxFor(Model => Model.Password)
+    @Html.CheckBoxFor(Model => Model.RememberMe)
+
+    <button type="submit" name="submit" id="submit">Đăng nhập</button>
+}
+
+

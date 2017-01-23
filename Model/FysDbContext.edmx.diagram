@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="12f9ee4495204b89adc011b8db543fe3" Name="Diagram1">
+        <EntityTypeShape EntityType="FYSVersion1Model.Album" Width="1.5" PointX="3.5" PointY="30.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYSVersion1Model.Bid" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYSVersion1Model.Buy" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYSVersion1Model.Comment" Width="1.5" PointX="3" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYSVersion1Model.Design" Width="1.5" PointX="3" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYSVersion1Model.File" Width="1.5" PointX="3" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYSVersion1Model.Follow" Width="1.5" PointX="3" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYSVersion1Model.GroupPost" Width="1.5" PointX="3" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYSVersion1Model.Like" Width="1.5" PointX="3" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYSVersion1Model.Message" Width="1.5" PointX="5.25" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYSVersion1Model.Picture" Width="1.5" PointX="5.75" PointY="30" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYSVersion1Model.Post" Width="1.5" PointX="8" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYSVersion1Model.Reply" Width="1.5" PointX="5.25" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYSVersion1Model.Save" Width="1.5" PointX="3" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FYSVersion1Model.User" Width="1.5" PointX="0.75" PointY="15.125" IsExpanded="true" />
+        <AssociationConnector Association="FYSVersion1Model.FK_Picture_Album" ManuallyRouted="false" />
+        <AssociationConnector Association="FYSVersion1Model.FK_Bid_User" ManuallyRouted="false" />
+        <AssociationConnector Association="FYSVersion1Model.FK_Buy_User" ManuallyRouted="false" />
+        <AssociationConnector Association="FYSVersion1Model.FK_Comment_User" ManuallyRouted="false" />
+        <AssociationConnector Association="FYSVersion1Model.FK_Reply_Comment" ManuallyRouted="false" />
+        <AssociationConnector Association="FYSVersion1Model.FK_Design_User" ManuallyRouted="false" />
+        <AssociationConnector Association="FYSVersion1Model.FK_File_User" ManuallyRouted="false" />
+        <AssociationConnector Association="FYSVersion1Model.FK_Message_File" ManuallyRouted="false" />
+        <AssociationConnector Association="FYSVersion1Model.FK_Follow_User" ManuallyRouted="false" />
+        <AssociationConnector Association="FYSVersion1Model.FK_Follow_User1" ManuallyRouted="false" />
+        <AssociationConnector Association="FYSVersion1Model.FK_GroupPost_User" ManuallyRouted="false" />
+        <AssociationConnector Association="FYSVersion1Model.FK_Like_User" ManuallyRouted="false" />
+        <AssociationConnector Association="FYSVersion1Model.FK_Message_User" ManuallyRouted="false" />
+        <AssociationConnector Association="FYSVersion1Model.FK_Message_User1" ManuallyRouted="false" />
+        <AssociationConnector Association="FYSVersion1Model.FK_Post_Picture" ManuallyRouted="false" />
+        <AssociationConnector Association="FYSVersion1Model.FK_Post_User" ManuallyRouted="false" />
+        <AssociationConnector Association="FYSVersion1Model.FK_Reply_User" ManuallyRouted="false" />
+        <AssociationConnector Association="FYSVersion1Model.FK_Save_User" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
