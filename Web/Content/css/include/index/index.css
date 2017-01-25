@@ -1,0 +1,104 @@
+/******************************
+    FONTS
+******************************/
+@font-face {
+    font-family: "OCR";
+    src: url('../../../assets/fonts/OCRAStd.ttf');
+}
+
+/******************************
+    MAIN
+******************************/
+.index-ttl {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: "OCR";
+    font-size: 90%;
+}
+.index-ttl h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #0c0c0c;
+    font-weight: bolder;
+    margin-top: 12%; 
+}
+.page-lst {
+    text-align: center;
+    margin-top: 25px;
+}
+.page-lst li {
+    width: 90%;
+    margin: 0 0 15px 5%;
+    text-align: left;
+}
+.page-lst li a {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #0c0c0c;
+    line-height: 230%;
+    border-radius: 5px;
+    display: block;
+    padding-left: 20px;
+}
+.page-lst li a:hover {
+    color: #f2f2f2;
+    background-color: #0c0c0c;
+}
+
+/******************************
+    RESPONSIVE
+******************************/
+@media screen and (min-width: 480px){
+    .index-ttl {
+        height: 100vh;
+    }
+    .index-ttl h1 {
+        margin-top: 10px;
+        font-size: 2em;
+    }
+}
+@media screen and (min-width: 667px){
+    .index-ttl h1 {
+        font-size: 3em;
+        margin-top: 35px;
+    }
+}
+@media screen and (min-width: 736px){
+    .index-ttl h1 {
+        font-size: 3em;
+        margin-top: 50px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .index-ttl {
+        font-size: 100%;
+        overflow-y: hidden;
+    }
+    .index-ttl h1 {
+        margin-top: 28%;
+    }
+    .page-lst li {
+        width: 18%;
+        float: left;
+        margin-bottom: 30px;
+    }
+    .page-lst li a {
+        padding: 0;
+        text-align: center;
+        font-size: 0.9em;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .index-ttl h1 {
+        margin-top: 18%;
+    }
+    .page-lst li {
+        margin-left: 0;
+        width: 12%;
+        margin-right: 0.4%;
+    }
+    .page-lst li:first-child {
+        margin-left: 0.5%;
+    }
+}

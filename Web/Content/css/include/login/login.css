@@ -1,0 +1,79 @@
+.home {
+    font-family: 'Arsenal', sans-serif;
+}
+.login {
+    margin: 15px;
+    width: 310px;
+    background-color: white;
+    border: 1px solid gray;
+}
+.login h2 {
+    color: black;
+    text-align: center;
+    margin: 15px 0 30px 0;
+    font-size: 1.2em
+}
+form {
+    width: 100%;
+}
+input[type="text"], input[type="password"] {
+    width: 85%;
+    display: block;
+    margin: 15px auto;
+    height: 40px;
+    padding-left: 20px;
+    border: 1px solid gray;
+}
+input[type="text"]:focus, input[type="password"]:focus {
+    border: 1px solid #64B3E3;
+    box-shadow: 0px 0px 7px 0px #64B3E3;
+}
+input[type="submit"] {
+    width: 85%;
+    display: block;
+    margin: 17px auto;
+    height: 40px;
+    border: none;
+    background-color: #4790CD;
+    color: white;
+    font-size: 1.1em
+}
+.login p {
+    text-align: center;
+    margin: 15px 0;
+    color: black;
+    font-weight: 700;
+    font-size: 0.95em;
+}
+.login-lst {
+    text-align: center;
+}
+.login-lst li {
+    display: inline-block;
+    border-radius: 100%;
+    margin: 0 10px;
+}
+.login-lst a {
+    display: block;
+    width: 70px;
+    border-radius: 100%;
+}
+.login-lst i {
+    line-height: 70px;
+    display: block;
+    text-align: center;
+    border-radius: 100%;
+    color: white;
+    font-size: 1.7em;
+    cursor: pointer;
+}
+.login-lst li:first-child {
+    background-color: #3B5A99;
+}
+.login-lst li {
+    background-color: #E02F2E;
+}
+.color {
+    color: #64B3E3;
+    cursor: pointer;
+}

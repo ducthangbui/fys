@@ -1,0 +1,13 @@
+﻿@using Core.Logging
+
+@{
+    ViewBag.Title = "Demo";
+    Layout = null;
+}
+
+<h2>This is authorize page</h2>
+@using (Html.BeginForm("Logout", "Account"))
+{
+    <button type="submit" name="logout" id="logout">Log out</button>
+}
+

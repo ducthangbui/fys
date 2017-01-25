@@ -4,16 +4,53 @@
     Layout = null;
 }
 
-<h2>Login</h2>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-------- Site resource -------->
+    <link rel="icon" href="~/Content/assets/img/index/fys-ic.png" />
+    <link type="text/css" rel="stylesheet" href="~/Content/css/global.css" />
+    <link type="text/css" rel="stylesheet" href="~/Content/css/include/login/login.css" />
 
-@using (Html.BeginForm("Login", "Account", FormMethod.Post))
-{
-    @Html.AntiForgeryToken()
-    @Html.TextBoxFor(Model => Model.UserName)
-    @Html.TextBoxFor(Model => Model.Password)
-    @Html.CheckBoxFor(Model => Model.RememberMe)
+    <!-------- Hosted resource -------->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
 
-    <button type="submit" name="submit" id="submit">Đăng nhập</button>
-}
+</head>
+<body class="home">
+    <div class="login">
+        <h2>Sign into your account</h2>
+        @using (Html.BeginForm("login", "account", FormMethod.Post))
+        {
+            @Html.ValidationSummary(true)
+            @Html.AntiForgeryToken()
+            
+            @Html.TextBoxFor(model => model.UserName, new { placeholder = "Your email address" });
+            @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+            @Html.TextBoxFor(model => model.Password, new { placeholder = "Your password" ,@type = "password"});
+            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+            <input type="submit" name="submit" value="Login" />
+        }
+
+
+        <p>Or log in with</p>
+        <ul class="login-lst">
+            <li>
+                <a href="#" title="Facebook">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Google">
+                    <i class="fa fa-google" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+        <p><span class="color">Sign up</span> or <span class="color">Forgot password</span></p>
+    </div>
+</body>
+</html>
 
 
